@@ -65,11 +65,11 @@ io.on("connection", (socket) => {
     const result = await ChatService.sendMessage({
       fromId: sender.id,
       toId: receiver.id,
-
       message,
     });
-    console.log(result);
-
+    if (!result) {
+      return;
+    }
     io.to(room).emit("message", JSON.stringify({ sender, message }));
   });
 
