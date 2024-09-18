@@ -1,7 +1,7 @@
 # Общий чат со всеми пользователями
 
 <p align="center">
-    <img src="./readme_data/3_users_chat.gif">
+    <img src="./readme_data/4_common_chat.gif">
 <p>
 
 Функции:
